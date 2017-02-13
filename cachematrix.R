@@ -29,7 +29,7 @@ makeMatrix <- function(x = matrix()) {
 ## already been calculated (and the matrix has not changed), then
 ## `cacheSolve` should retrieve the inverse from the cache.
 
-cacheSolve <- function(x = matrix(), ...) {
+cacheSolve <-  function(x = matrix(), ...) {
         ## Return a matrix that is the inverse of 'x'
     m <- x$getinv()
     if(!is.null(m)) {
